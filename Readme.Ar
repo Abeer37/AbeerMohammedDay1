@@ -1,0 +1,42 @@
+public class Main {
+    public static void main(String[] args) {
+        String First_Name="Abeer";
+        String Last_Name="AlQahtani";
+        int Age=20;
+        int num1=2;
+        int num2=4;
+        int sum;
+        int div;
+        int length=5;
+        int width=7;
+        int rectangle_area;
+        int rectangle_perimeter;
+        int num3=23;
+        int num4=45;
+        int a=55;
+        int b=70;
+        boolean x;
+        boolean y;
+
+        sum=num1+num2;
+        div=sum/2;
+        rectangle_area=length*width;
+        rectangle_perimeter=2*(length+width);
+        x=a<50;
+        y=a<b;
+
+        System.out.println("Name: "+First_Name+" "+Last_Name);
+        System.out.println("Age: "+Age);
+        System.out.println("The sum of two numbers: "+sum);
+        System.out.println("The Grand total divided by 2: "+div);
+        System.out.println("The area of rectangle: "+rectangle_area);
+        System.out.println("The perimeter of rectangle: "+rectangle_perimeter);
+        System.out.println("Are the numbers 23 & 45 equal? ");
+        System.out.println(num3==num4);
+        System.out.println("Are the conditions a<50 and a<b true? ");
+        System.out.println(x&&y);
+        System.out.println("Are the conditions a<50 or a<b true? ");
+        System.out.println(x||y);
+    }
+}
+
