@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //First Exercise Solution
+          Scanner x=new Scanner(System.in);
+          System.out.println("Please Enter a number: ");
+          int Num1=x.nextInt();
+
+      if(Num1>0){
+          System.out.println("The value is a positive number");
+          }
+      else if(Num1<0){
+          System.out.println("The value is a negative number");
+      }
+      else{
+          System.out.println("It is a Zero");
+      }
+
+        //Second Exercise Solution
+          Scanner y=new Scanner(System.in);
+          System.out.println("Please enter a text:");
+          String text=y.nextLine();
+
+          Scanner z=new Scanner(System.in);
+          System.out.println("Please enter a number:");
+          int number=z.nextInt();
+          
+          System.out.println("The character index is");
+          System.out.println(text.charAt(number));
+
+        //Second Exercise Solution(I think the right solution like the below)
+//        Scanner y=new Scanner(System.in);
+//        System.out.println("Please enter a text:");
+//        String text=y.nextLine();
+//
+//        Scanner z=new Scanner(System.in);
+//        System.out.println("Please enter a number:");
+//        int number=z.nextInt();
+//
+//        if() {
+//            System.out.println("The character index is");
+//            System.out.println(text.charAt(number));
+//        }
+//        else {
+//            System.out.println("Sorry,there is no character index for the entered number");
+//        }
+
+
+        //Third Exercise Solution
+          Scanner w=new Scanner(System.in);
+          System.out.println("Please enter a text");
+          String Text=w.nextLine();
+
+          Scanner h=new Scanner(System.in);
+          System.out.println("Please enter a letter");
+          String Letter=h.nextLine();
+
+        if (Text.contains(Letter)){
+            System.out.println("The text contain the entered letter.");
+        }else {
+            System.out.println("The text not contain the entered letter.");
+        }
+
+        //Fourth Exercise Solution (Bonus)
+          Scanner s=new Scanner(System.in);
+          System.out.println("Please enter the first number:");
+          int num1=s.nextInt();
+
+          Scanner s1=new Scanner(System.in);
+          System.out.println("Please enter the second number:");
+          int num2=s1.nextInt();
+
+          Scanner s2=new Scanner(System.in);
+          System.out.println("Please enter the third number:");
+          int num3=s2.nextInt();
+
+      if (num1>num2 && num1>num3) {
+          System.out.println("The largest number is"+num1);
+          }
+      else if (num2>num1 && num2>num3) {
+          System.out.println("The largest number is"+num2);
+          }
+      else{
+          System.out.println("The largest number is"+num3);
+
+          }
+    }
+}
