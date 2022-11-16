@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+         //First Exercise Solution
+          for (int i = 1; i <= 100; i++){
+              if(i % 2 == 0){
+
+                  System.out.println(i+" "+"the number is even");
+              }
+              else {
+                  System.out.println(i);
+              }
+          }
+
+
+           //Second Exercise Solution
+            for (int i = 1; i <= 100; i++){
+
+                if(i % 2 == 0){
+                  continue;
+             }
+              System.out.println(i);
+            }
+
+          //Third Exercise Solution
+             for (int i = 1; i <= 10; i++){
+
+              if(i == 4){
+                  break;
+              }
+              System.out.println(i);
+          }
+
+        //Fourth Exercise Solution
+        String name="Abeer";
+          for (int i = 0; i < name.length() ; i++){
+                System.out.println(name.charAt(i));
+          }
+
+          //Fifth Exercise Solution(Bonus)
+          String Name="Abeer";
+          for (int i = Name.length()-1; i >= 0  ; i--){
+              System.out.println(Name.charAt(i));
+          }
+
+        //Fifth Exercise Solution(Bonus) by using while loop
+//        String Name="Abeer";
+//        int i = Name.length()-1;
+//        while(i >= 0){
+//            System.out.println(Name.charAt(i));
+//            i--;
+//        }
+
+    }
+}
