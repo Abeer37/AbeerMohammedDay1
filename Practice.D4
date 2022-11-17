@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //First Practice solution
+        int[] numbers = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] >= 90) {
+                System.out.println(numbers[i] + " A");
+            } else if (numbers[i] >= 80) {
+                System.out.println(numbers[i] + " B");
+            } else if (numbers[i] >= 70) {
+                System.out.println(numbers[i] + " C");
+            } else {
+                System.out.println(numbers[i] + " D");
+            }
+        }
+
+        //Second Practice solution
+
+        String[] Name= {"Shaza","Mohamed","Asmaa","Anfal","Yousra","Amin","Radwa","Yasmeen"};
+
+        for (int i = 0; i < Name.length; i++){
+
+            if(Name[i].startsWith("A")){
+                System.out.println(Name[i]);
+            }
+
+        }
+
+
+
+
+
+        //Third practice solution
+        int[] nums= {50,60,40,10,38,65,87,56,90,100,66,80,88,40,98};
+        for (int x:nums) {
+
+            if (x > 50 ) {
+                System.out.println(x);
+            }
+        }
+
+        //Fourth practice solution
+        int[] Numbers= {22,60,10,50,3,79,100,44};
+        System.out.println("please enter a number ");
+        Scanner s = new Scanner(System.in);
+        int cheak =s.nextInt();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            if (cheak == Numbers[i]){
+                System.out.println("The array contain this value.");
+            }
+        }
+    }
+}
