@@ -1,0 +1,32 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //First practice solution
+        String[] name= {"sara","majed","maha","abeer","atheer","leen","noor"};
+        try{
+            System.out.println(name[9]);
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println(e.getMessage());
+        }
+
+        //Second practice solution
+        try {
+            Scanner s = new Scanner(System.in);
+            System.out.println("Please Enter a number: ");
+            int num = s.nextInt();
+            check(num);
+        } catch (InputMismatchException e){
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    public static void check(int num) throws Exception {
+        if (num==1 || num==2 || num==3) {
+            throw new Exception("valid input");
+        }
+    }
+}
